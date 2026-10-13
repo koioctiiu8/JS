@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Image Preview with Hover and Undo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="image" class="preview-box">
+    Hover over an image below.
+  </div>
+
+  <div class="thumbnail-container">
+    <div class="image-container"
+         onmouseover="showCaption(this); upDate(this.querySelector('img'))"
+         onmouseout="hideCaption(this); undoUpdate()">
+      <img src="img/DoMixi.jpg" alt="Live Stream 70 years" />
+      <div class="caption">Happy black dog with orange bandana</div>
+    </div>
+
+    <div class="image-container"
+         onmouseover="showCaption(this); upDate(this.querySelector('img'))"
+         onmouseout="hideCaption(this); undoUpdate()">
+      <img src="img/Shisha.jpg" alt="shisa" />
+      <div class="caption">Child hugging a dog</div>
+    </div>
+
+    <div class="image-container"
+         onmouseover="showCaption(this); upDate(this.querySelector('img'))"
+         onmouseout="hideCaption(this); undoUpdate()">
+      <img src="img/Alo.jpg" alt="Are you Vu?" />
+      <div class="caption">Black dog sitting on wooden floor</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
