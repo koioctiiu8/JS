@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Interactive Image Preview with Accessibility</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="image" class="preview-box">
+    Hover or focus on an image below.
+  </div>
+
+  <div class="thumbnail-container" id="thumbnail-container">
+
+    <div class="image-container" tabindex="0">
+      <img src="img/Alo.jpg" alt="Call for Vu" />
+      <div class="caption">Call for Vu</div>
+    </div>
+    <div class="image-container" tabindex="0">
+      <img src="img/DoMixi.jpg" alt="Child dog" />
+      <div class="caption">Child dog</div>
+    </div>
+    <div class="image-container" tabindex="0">
+      <img src="img/Shisha.jpg" alt="Relaxing" />
+      <div class="caption">Relaxing</div>
+    </div>
+    <div class="image-container" tabindex="0">
+      <img src="img/BaMia.jpg" alt="Dog foods" />
+      <div class="caption">Dog foods</div>
+    </div>
+    <div class="image-container" tabindex="0">
+      <img src="img/KhoGa.png" alt="Dog foods" />
+      <div class="caption">Dog foods</div>
+    </div>
+    <div class="image-container" tabindex="0">
+      <img src="img/Hat.jpg" alt="Dog foods" />
+      <div class="caption">Dog foods</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
